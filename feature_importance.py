@@ -7,7 +7,6 @@ from matplotlib.ticker import MultipleLocator, PercentFormatter
 
 
 def plot_importances(models, model_names, labels=None, y_limit=(0,0.5)):
-
     """Plot feature importances of random forest models.
 
     Args:
