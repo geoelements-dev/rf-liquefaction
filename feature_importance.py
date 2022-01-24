@@ -31,10 +31,10 @@ def plot_importances(models, model_names, labels=None, y_limit=(0,0.5)):
     x = np.arange(len(labels))
 
     # Number of models
-    model_count = len(models)
+    num_models = len(models)
 
     # Width of bars
-    width = 1/model_count-0.05
+    width = 1/num_models-0.05
 
     # Make the center of the bar groups align with the tick
     offset = 0.5
@@ -50,7 +50,7 @@ def plot_importances(models, model_names, labels=None, y_limit=(0,0.5)):
 
         #Create an array of the coordinates where bars should plot.
         coordinate = np.array([np.where([i==j for i in labels]) for j in feature_names]).reshape(-1)
-        rects = ax.bar(coordinate-(model_count/2-offset)*width, importances,width,label=model_name)
+        rects = ax.bar(coordinate-(num_models/2-offset)*width, importances,width,label=model_name)
         offset+=1
 
     ax.grid(axis='y')
