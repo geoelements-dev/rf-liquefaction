@@ -1,2 +1,3 @@
-# rf-liquefaction
-Random forest analysis of liquefaction and lateral spreading
+# X-AI Random forest for lateral spreading
+
+Random forest analysis of lateral spreading through eXplainable-AI.
